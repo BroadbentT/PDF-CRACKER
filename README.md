@@ -6,4 +6,4 @@ Version 1.
 
 Python script file to crack encrypted .pdf files using bruteforce.
 
-![Screenshot](newpicture2.PNG)
+![Screenshot](newpicture3.PNG)
