@@ -44,14 +44,19 @@ print "             BY TERENCE BROADBENT BSC CYBER SECURITY (FIRST CLASS)       
 if os.geteuid() != 0:
     print "\nPlease run this python script as root..."
     exit(True)
+	
 if len(sys.argv) < 2:
     print "\nUse the command python pdf-cracker.py topsecret.pdf\n"
     exit(True)
+	
 filename = sys.argv[1]
+
 if os.path.exists(filename) == 0:
     print "\nFile " + filename + " was not found, did you spell it correctly?"
     exit(True)
+	
 typetest = filename[-3:]
+
 if typetest != "pdf":
     print "This is not a .pdf file...\n"
     exit (True)
@@ -66,24 +71,31 @@ if typetest != "pdf":
 
 print "\nChecking dependencies...."
 install = False
+
 if os.path.isfile('/usr/share/pdfid/pdfid.py') != 1:
     print "pdfid - missing"
     install = True
+	
 if os.path.isfile('/usr/bin/pdf-parser') != 1:
     print "pdf-parser - missing"
     install = True
+	
 if os.path.isfile('/usr/bin/pdfcrack') != 1:
     print "pdfcrack - missing"
     install = True
+	
 if os.path.isfile('/usr/share/wordlists/rockyou.txt') != 1:
     print "Rockyou.txt - missing"
     install = True
+	
 if os.path.isfile('/root/Downloads/bleeding-jumbo/JohnTheRipper-bleeding-jumbo/run/pdf2john.pl') != 1:
     print "John the ripper bleeding jumbo - missing"
     install = True
+	
 if os.path.isfile('/root/.hashcat/hashcat.potfile') != 1:
     print "Hashcat - missing"
     install = True
+	
 if install == False:
     print "All required dependencies are pre-installed..."
 else:
@@ -168,6 +180,7 @@ menu = {}
 menu['1']="Dictionary Attack."
 menu['2']="Hash Attack."
 menu['3']="Exit"
+
 while True: 
     options=menu.keys()
     options.sort()
