@@ -24,6 +24,7 @@ import fileinput
 # Details: Show a universal header.    
 # Modified: N/A                                                               
 # -------------------------------------------------------------------------------------
+
 print " ____    ____    _____    ____   ____       _       ____   _  __  _____   ____   "
 print "|  _ \  |  _ \  |  ___|  / ___| |  _ \     / \     / ___| | |/ / | ____| |  _ \  "
 print "| |_) | | | | | | |_    | |     | |_) |   / _ \   | |     | ' /  |  _|   | |_) | "
@@ -167,7 +168,6 @@ menu = {}
 menu['1']="Dictionary Attack."
 menu['2']="Hash Attack."
 menu['3']="Exit"
-
 while True: 
     options=menu.keys()
     options.sort()
