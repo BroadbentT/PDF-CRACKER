@@ -4,4 +4,4 @@ python pdf-cracker.py topsecret.pdf
 
 Python script file to crack encrypted .pdf files using bruteforce.
 
-![Screenshot](Picture.png)
+![Screenshot](picture1.png)
