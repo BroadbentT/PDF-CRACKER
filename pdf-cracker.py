@@ -247,7 +247,7 @@ while True:
         print "Hash Mode/Level   : " + level
         print "Crack Status      : Cracking, please wait..."
         os.system("hashcat -m " + level + " -a 3 F1.txt -i ?d?d?d?d?d?d --force > F2.txt") # Note - Currently set for six decimal password only
-        os.system("hashcat --show -m 10500 F1.txt --force > F3.txt")
+        os.system("hashcat --show -m " + level + " F1.txt --force > F3.txt")
         os.system("awk -F: '{ print $2 }' F3.txt > F4.txt")
         with open('F4.txt', 'r') as myfile:
             hashpass = myfile.read().replace('\n', '')
