@@ -1,4 +1,4 @@
-# PDF-CRACKER
+# PDF CRACKER
 ## A PYTHON SCRIPT FILE TO CRACK ENCRYPTED PDF FILES.
 
 Usage: python pdf-cracker.py topsecret.pdf
