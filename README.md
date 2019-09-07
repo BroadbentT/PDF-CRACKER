@@ -1,16 +1,17 @@
 # PDF-CRACKER
+## A PYTHON SCRIPT FILE TO CRACK ENCRYPTED PDF FILES.
 
-python pdf-cracker.py topsecret.pdf
+Usage: python pdf-cracker.py topsecret.pdf
 
 
-| LANGUAGE | FILENAME | COMMAND |
-|--------  |--------- |---------|
-| python | pdf-cracker.py | topsecret.pdf |
-| |MD5 Hash - d279e8e8b939cf146638627892f4a055 |
+| LANGUAGE | FILENAME       | MD5 HASH                         | 
+|--------  |---------       |---------                         | 
+| python   | pdf-cracker.py | bf5e9517513061d8d20a38da18ceb12c |
+| pdf      | topsecret.pdf  | 28f04239dfa5422bc9b8e39f528faec8 | 
 
-Python script file to crack encrypted .pdf files using bruteforce. The script is menu driven and allows the user to choose between a dictionary attack or a hash attack on the specified .pdf file. Once the password has been found - it then decrypts the .pdf file completely (Cracked.pdf).
+A python script file to crack encrypted .pdf files using bruteforce. The script is menu driven and allows the user to choose between a dictionary attack or a hash attack on the specified file. Once the password has been found, it then decrypts the file completely (Cracked.pdf).
 
-## CONSOLE DISPLAY
+### CONSOLE DISPLAY
 ![Screenshot](picture1.png)
 
 
