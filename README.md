@@ -12,6 +12,6 @@ Usage: python3 pdf-cracker.py topsecret.pdf
 A python script file to crack encrypted .pdf files using bruteforce. The script is menu driven and allows the user to choose between a dictionary attack or a hash attack on the specified file. Once the password has been found, it then decrypts the file completely (Cracked.pdf).
 
 ### CONSOLE DISPLAY
-![Screenshot](picture1.png)
+![Screenshot](picture1.gif)
 
 
